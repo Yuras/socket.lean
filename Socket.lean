@@ -649,4 +649,4 @@ Get the underlying file descriptor. This API is safe iff:
 1. You make sure to keep `socket` alive while using the file descriptor.
 2. You do not `close` or otherwise invalidate the file descriptor.
 -/
-unsafe def getFd (socket : @& Socket) : IO UInt32 := _getFd socket
+def getFd (socket : @& Socket) : IO UInt32 := _getFd socket
